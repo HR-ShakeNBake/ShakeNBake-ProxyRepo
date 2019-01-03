@@ -3,35 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <title>Shake N Bake Proxy</title>
+  <link rel="stylesheet" href="http://localhost:4000/style.css">
+  <link rel="stylesheet" href="http://localhost:5000/style.css">
+  <link rel="stylesheet" href="http://localhost:8000/styles/styles.css">
+  <link rel="stylesheet" href="http://localhost:7000/styles/styles.css">
 </head>
 <body>
   <div id="summary"></div>
+  <div id="modal"></div>
+  <div id="upload"></div>
   <div id="ingredients"></div>
-  <div id="directions"></div>
+  <div id="directions-root"></div>
   <div id="reviews"></div>
   <script src="https://fb.me/react-0.14.3.min.js"></script>
   <script src="https://fb.me/react-dom-0.14.3.min.js"></script>
-  <script src="http://localhost:4000/client/dist/bundle.js"></script>
-  <!-- <script src="http://localhost:5000/client/dist/bundle.js"></script>
-  <script src="http://localhost:7000/client/dist/bundle.js"></script>
-  <script src="http://localhost:8000/client/dist/bundle.js"></script> -->
-  <script>
-      ReactDOM.render(
-        React.createElement(App),
-        document.getElementById('summary')
-      );
-      // ReactDOM.render(
-      //   React.createElement(Ingredients),
-      //   document.getElementById('ingredients')
-      // );
-      // ReactDOM.render(
-      //   React.createElement(App),
-      //   document.getElementById('directions')
-      // );
-      // ReactDOM.render(
-      //   React.createElement(App),
-      //   document.getElementById('reviews')
-      // );
-    </script>
+  <script src="http://localhost:4000/bundle.js"></script>
+  <script src="http://localhost:5000/bundle.js"></script>
+  <script src="http://localhost:8000/bundle.js"></script>
+  <script src="http://localhost:7000/dist/bundle.js"></script>
+
 </body>
 </html>
